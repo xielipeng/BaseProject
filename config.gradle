@@ -1,0 +1,40 @@
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.0",
+
+            minSdkVersion    : 23,
+            targetSdkVersion : 26,
+
+            versionCode      : 1,
+            versionName      : "1.0",
+
+            VSupportSdk      : "26.0.0-alpha1"
+    ]
+
+    dependencies = [
+            "appcompat-v7"            : "com.android.support:appcompat-v7:${android["VSupportSdk"]}",
+            "design"                  : "com.android.support:design:${android["VSupportSdk"]}",
+            "annotations"             : "com.android.support:support-annotations:${android["VSupportSdk"]}",
+            "recyclerview-v7"         : "com.android.support:recyclerview-v7:${android["VSupportSdk"]}",
+            "constraint-layout"       : "com.android.support.constraint:constraint-layout:1.0.2",
+            "butterknife"             : "com.jakewharton:butterknife:8.7.0",
+            "butterknife-apt"         : "com.jakewharton:butterknife-compiler:8.7.0",
+            "retrofit2"               : "com.squareup.retrofit2:retrofit:2.3.0",
+            "retrofit2:converter-gson": "com.squareup.retrofit2:converter-gson:2.3.0",
+            "retrofit2:adapter-rxjava": "com.squareup.retrofit2:adapter-rxjava:2.3.0",
+            "okhttp3"                 : "com.squareup.okhttp3:okhttp:3.8.1",
+            "okhttp3:log-interceptor" : "com.squareup.okhttp3:logging-interceptor:3.8.1",
+            "rxandroid"               : "io.reactivex:rxandroid:1.2.1",
+            "rxbinding"               : "com.jakewharton.rxbinding:rxbinding:1.0.1",
+            "rxbinding-appcompat-v7"  : "com.jakewharton.rxbinding:rxbinding-appcompat-v7:1.0.1",
+            "rxbinding-design"        : "com.jakewharton.rxbinding:rxbinding-design:1.0.1",
+            "rxlifecycle-components"  : "com.trello:rxlifecycle-components:1.0",
+            "rxpermissions"           : "com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar",
+            "glide"                   : "com.github.bumptech.glide:glide:3.8.0",
+            "logger"                  : "com.orhanobut:logger:2.1.1",
+            "takephoto"               : "com.jph.takephoto:takephoto_library:4.0.3",
+            "circleimageview"         : "de.hdodenhof:circleimageview:2.1.0",
+            "BaseRecyclerViewAdapter" : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.3",
+    ]
+}
